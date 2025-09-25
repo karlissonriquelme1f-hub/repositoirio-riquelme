@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int anos;
+    printf("Digite o tempo de servico (anos): ");
+    scanf("%d", &anos);
+
+    if (anos >= 1 && anos <= 2) printf("Junior\n");
+    else if (anos >= 3 && anos <= 5) printf("Pleno A\n");
+    else if (anos == 6) printf("Pleno B\n");
+    else if (anos >= 7) printf("Senior\n");
+    else printf("Tempo invalido!\n");
+
+    return 0;
+}

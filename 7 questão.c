@@ -1,22 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int matriz[2][2], i, j;
+    int nota;
+    printf("Digite a nota (1 a 5): ");
+    scanf("%d", &nota);
 
-    printf("Digite os valores da matriz 2x2:\n");
-    for(i=0;i<2;i++){
-        for(j=0;j<2;j++){
-            scanf("%d",&matriz[i][j]);
-        }
+    switch(nota) {
+        case 1: printf("Pessimo\n"); break;
+        case 2: printf("Ruim\n"); break;
+        case 3: printf("Bom\n"); break;
+        case 4: printf("Muito bom\n"); break;
+        case 5: printf("Excelente\n"); break;
+        default: printf("Nota invalida!\n");
     }
-
-    printf("\nMatriz completa:\n");
-    for(i=0;i<2;i++){
-        for(j=0;j<2;j++){
-            printf("%d ",matriz[i][j]);
-        }
-        printf("\n");
-    }
-
     return 0;
 }
