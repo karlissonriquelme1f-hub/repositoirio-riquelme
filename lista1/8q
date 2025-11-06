@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("=== Problema: Glicose ===");
+
+        Console.Write("Digite a quantidade de glicose no sangue (mg/dl): ");
+        double glicose = double.Parse(Console.ReadLine());
+
+        string classificacao;
+
+        if (glicose <= 100)
+        {
+            classificacao = "Normal";
+        }
+        else if (glicose <= 140)
+        {
+            classificacao = "Elevado";
+        }
+        else
+        {
+            classificacao = "Diabetes";
+        }
+
+        Console.WriteLine($"\nClassificação: {classificacao}");
+    }
+}
